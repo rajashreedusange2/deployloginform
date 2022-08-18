@@ -1,0 +1,127 @@
+
+.container-fluid{
+    height: 100vh;
+    position: relative;
+    
+}
+.bg-img{
+    background: url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    height: 100%;
+    width: 100%;
+
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.columnSecond{
+    background: url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    -webkit-box-shadow: 0 0 20px 2px #fff;
+    -moz-box-shadow: 0 0 20px 2px #fff;
+    box-shadow: 0 0 20px 2px #504d4d;
+}
+/* form{
+  width: 80%;
+} */
+h6{
+  margin-bottom: -30px;
+}
+.form-col{
+background: url(../assets/img/curve.svg);
+height: 70vh;
+background-repeat: no-repeat;
+background-size: cover;
+margin-left: auto;
+}
+
+.div-wrap{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.form-group {
+  margin: 25px;
+  text-align: left;
+}
+span{
+  margin: 0px 50px;
+  color: red;
+  text-align:left;
+}
+.form-control {
+  width: 80%;
+    margin: auto;
+  border-radius: 20px;
+}
+div.forget {
+  margin: 25px;
+  width: 80%;
+  text-align: right;
+}
+a {
+  color: #791212;
+  text-decoration: none;
+}
+.btn{
+    /* width: 70%; */
+    border-radius: 20px;
+    background-color: #791212;
+    border: 0px;
+    text-align: center;
+    padding: 6px 30px;
+}
+
+.social-row{
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.facebook-img-fluid{
+  width: 10%;
+}
+.twitter-img-fluid{
+  width: 10%;
+}
+.linkedin-img-fluid{
+  width: 10%;
+}
+
+@media only screen and (max-width: 767px){
+  .div-wrap{
+    width: 100%;
+  }
+  .columnSecond {
+    background: none;
+    height: 70vh;
+    box-shadow: none;
+  }
+  .form-col{
+    background: url(../assets/img/mob-curve.svg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+  }
+  .title{
+    margin-top: 65px;
+  }
+}
+@media only screen and (max-width: 991px){
+  .div-wrap{
+    width: 80%;
+  }
+  .form-col {
+    width: 80%;
+}
+}

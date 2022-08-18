@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="bg-img"></div>
+  <div class="container columnSecond">
+    <div class="row">
+      <div class="col-md-12 p-0">
+        <div class="col-md-6 form-col">
+          <div class="div-wrap">
+            <div class="title">
+              <h1>Welcome</h1>
+              <h6>Login into your account to continue</h6>
+            </div>
+          
+          <form [formGroup]="myReactiveForm" (ngSubmit)="loginUser()">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter Username" formControlName="username">
+              <span *ngIf="username && username.invalid && username.touched">Please Enter Username</span>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control"  placeholder="Password" formControlName="password">
+              <span *ngIf="password && password.invalid && password.touched">Please Enter Password</span>
+            </div>
+            <div class="forget">
+              <a href="">Forget Your Password?</a>
+            </div>
+              <button type="submit" class="btn btn-primary" [disabled]="myReactiveForm.invalid">Login</button>
+          </form>
+          <div >
+            <a href="">Don't have an account?Sign-up!</a>
+            <div class="row social-row">
+             <img class="facebook-img-fluid" src="../assets/img/square-facebook-brands.svg" alt="">
+             <img class="twitter-img-fluid" src="../assets/img/twitter-brands.svg" alt="">
+             <img class="linkedin-img-fluid" src="../assets/img/linkedin-brands.svg" alt="">
+            </div>
+          </div>
+          </div>
+          
+        </div>
+        
+      <!-- </div> -->
+      <!-- <div class="col-md-12 columnSecond" > -->
+        <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt=""> -->
+        <!-- <div class="columnSecond">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1698 575"><path fill="#0099ff" fill-opacity="1" d="M0,0L60,48C120,96,240,192,360,208C480,224,600,160,720,128C840,96,960,96,1080,122.7C1200,149,1320,203,1380,229.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        </div> -->
+        
+      </div>
+    </div>
+  </div>
+</div>
